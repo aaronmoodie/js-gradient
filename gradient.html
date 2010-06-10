@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ru">
+<head>
+	<title>Colours</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<script type="text/javascript" src="gradient.js" charset="utf-8"></script>
+	<style type="text/css" media="screen">
+	   #container {
+	       width:800px;
+	       margin:0 auto;
+	       text-align:center;
+	   }
+	   
+	   h1 {
+	       font-weight: normal;
+	       font-size: 45px;
+	   }
+	   
+	</style>
+</head>
+<body>
+    
+    <div id="container">
+        <script type="text/javascript" charset="utf-8">
+
+            var index = Math.floor(Math.random()*10)
+            var gradients = gradient(colour_pair[index][0], colour_pair[index][1], 6);
+            for (increment in gradients) { 
+                    document.write('<h1 style="color:#', gradients[increment] ,';">New Colour</h1>');
+            } 
+
+        </script>
+        
+    </div>
+
+	
+</body>
+</html>
