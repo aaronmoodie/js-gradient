@@ -1,1 +1,4 @@
 This is a javascript port of a php script found here http://www.codingforums.com/showthread.php?t=79463
+
+The program generates a gradient between two colours with 'x' increments.
+It is currently set up to randomly pick a pair of colours from the colour_pair array.
